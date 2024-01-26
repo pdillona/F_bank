@@ -23,10 +23,15 @@ public class Account {
 	private Timestamp createdAt;
 	
 	// 출금 기능
-	
+	public void withdraw(Long amount) {
+		this.balance -= amount;
+	}
 	
 	
 	// 입금 기능
+	public void deposit(Long amount) {
+		this.balance += amount;
+	}
 	
 	
 	// 패스워드 체크 기능
