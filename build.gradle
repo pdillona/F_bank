@@ -30,11 +30,20 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	// https://mvnrepository.com/artifact/javax.servlet/jstl
-	implementation 'javax.servlet:jstl:1.2'
+	implementation group: 'org.glassfish.web', name: 'jakarta.servlet.jsp.jstl', version: '2.0.0'
+
 	// implementation 'javax.servlet:jstl'
 
+	implementation 'org.springframework.boot:spring-boot-starter'
+	// mysql connector
+	runtimeOnly 'com.mysql:mysql-connector-j'
 
-//implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0'
+	// mybatis
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.3.0'
+	
+	//log4jdbc
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'
+	
 }
 
 tasks.named('bootBuildImage') {

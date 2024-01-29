@@ -22,3 +22,14 @@ spring:
 #  output:
 #    ansi:
 #      enabled: always
+
+mybatis:
+  mapper-locations:
+  - classpath:mapper/**.xml
+  configuration:
+    map-underscore-to-camel-case: true # db는 스네이크 케이스로 컬럼명을 작성 했으나 java에서는 카멜로 작성해 이로 인해 오는 불일치를 해결하기 위한 설정.
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    
+logging:
+  level:
+    org.mybatis: DEBUG
