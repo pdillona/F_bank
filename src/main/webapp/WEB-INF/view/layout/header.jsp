@@ -17,7 +17,7 @@
 <script
 	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <!-- 외부 스타일 시트 가져오기 -->
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
@@ -36,13 +36,12 @@
 			<ul class="navbar-nav">
 				<c:choose>
 					<c:when test="${principal != null}">
-						<li class="nav-item" style=" "><a class="nav-link" href="/user/sign-out" style="padding-top:16px">로그아웃</a>
-						</li>
-
 						<li style="color:white; margin-top: 1rem ">
 							<p>
 								[<span>${principal.username}</span>] 님 환영 합니다.
 							</p>
+						</li>
+						<li class="nav-item" style="padding-left:7px"><a class="nav-link" href="/user/sign-out" style="padding-top:16px">로그아웃</a>
 						</li>
 					</c:when>
 					<c:otherwise>
@@ -66,9 +65,9 @@
 				<h3>Some Links</h3>
 				<p>Lorem ipsum dolor sit ame.</p>
 				<ul class="nav nav-pills flex-column">
-					<li class="nav-item"><a class="nav-link active" href="#">계좌
+					<li class="nav-item"><a class="nav-link" href="/account/save">계좌
 							생성</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">계좌 목록</a></li>
+					<li class="nav-item"><a class="nav-link" href="/account/list">계좌 목록</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">출금</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">입금</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">이체</a></li>

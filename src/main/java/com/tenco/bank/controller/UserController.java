@@ -12,6 +12,7 @@ import com.tenco.bank.dto.SignUpFormDto;
 import com.tenco.bank.handler.exception.CustomRestfulException;
 import com.tenco.bank.repository.entity.User;
 import com.tenco.bank.service.UserService;
+import com.tenco.bank.utils.Define;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -117,11 +118,9 @@ public class UserController {
 		
 		User user = userService.readUser(dto);
 		
-		httpSession.setAttribute("principal", user);
+		httpSession.setAttribute(Define.PRINCIPAL, user); //"principal" 로 가면 데이터 일관성 유지가 힘들다. 상수인 Define의 PRINCIPAL로 데이터의 일관성을 유지 관리 한다.
 		
-		//로그인 완료시 보낼 페이지 결정 --> (account/list)
-		
-		return "redirect:/user/sign-in";
+		return "redirect:/account/list";
 	}
 	
 	@GetMapping("/sign-out")

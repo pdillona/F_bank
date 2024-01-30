@@ -78,9 +78,6 @@ public class UserService {
 			throw new UnAuthorizedException("인증된 사용자가 아닙니다.", 
 					HttpStatus.UNAUTHORIZED);
 		}
-	
-		
-		
 		
 		return userEntity;
 	}
