@@ -17,10 +17,10 @@ public class History {
 	
 	private Integer id;
 	private Long amount;
-	private Integer w_account_id;
-	private Integer d_account_id;
-	private Long w_balance;
-	private Long d_balance;
+	private Integer wAccountId;
+	private Integer dAccountId;
+	private Long wBalance;
+	private Long dBalance;
 	private Timestamp createdAt;
 	
 }
