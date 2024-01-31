@@ -36,12 +36,13 @@
 			<ul class="navbar-nav">
 				<c:choose>
 					<c:when test="${principal != null}">
-						<li style="color:white; margin-top: 1rem ">
+						<li style="color: white; margin-top: 1rem">
 							<p>
 								[<span>${principal.username}</span>] 님 환영 합니다.
 							</p>
 						</li>
-						<li class="nav-item" style="padding-left:7px"><a class="nav-link" href="/user/sign-out" style="padding-top:16px">로그아웃</a>
+						<li class="nav-item" style="padding-left: 7px"><a
+							class="nav-link" href="/user/sign-out" style="padding-top: 16px">로그아웃</a>
 						</li>
 					</c:when>
 					<c:otherwise>
@@ -67,10 +68,12 @@
 				<ul class="nav nav-pills flex-column">
 					<li class="nav-item"><a class="nav-link" href="/account/save">계좌
 							생성</a></li>
-					<li class="nav-item"><a class="nav-link" href="/account/list">계좌 목록</a></li>
-					<li class="nav-item"><a class="nav-link" href="/account/withdraw">출금</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">입금</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">이체</a></li>
+					<li class="nav-item"><a class="nav-link" href="/account/list">계좌
+							목록</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/account/withdraw">출금</a></li>
+					<li class="nav-item"><a class="nav-link" href="/account/deposit">입금</a></li>
+					<li class="nav-item"><a class="nav-link" href="/account/transfer">이체</a></li>
 				</ul>
 				<hr class="d-sm-none">
 			</div>
