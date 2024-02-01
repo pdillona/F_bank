@@ -17,8 +17,17 @@
 				name="password" class="form-control" placeholder="Enter password"
 				id="pwd" value="1234">
 		</div>
-		<button type="submit" class="btn btn-primary">로그인</button>
+		<button type="submit" class="btn btn-primary ">로그인</button>
+	
 	</form>
+	<div>
+		<button type="button" class="w3-button ws-green w3-margin-bottom" onclick="startAnim('Spin')">spin</button>
+		</div>
+		<div>
+	<div id="Spin" class="w3-spin" >
+		돌려돌려 돌림판
+	</div>
+	</div>
 </div>
 </div>
 </div>
