@@ -35,7 +35,6 @@ public class AccountController {
 	@Autowired // 가독성 때문에 생성자를 타는데 Autowired가 걸린 경우가 있다.
 	private final HttpSession httpSession; // final을 사용시 생성자가 없으면 에러 난다.
 
-	@Autowired
 	private final AccountService accountService;
 
 	public AccountController(HttpSession httpSession, AccountService accountService) {
@@ -253,7 +252,7 @@ public class AccountController {
 	@GetMapping("/detail/{id}")
 	public String detail(@PathVariable Integer id, 
 			@RequestParam(name = "type", 
-						  defaultValue = "all", required = true) String type, 
+						  defaultValue = "all", required = false) String type, 
 			Model model) {
 			
 		// 1. 인증 검사
