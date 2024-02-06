@@ -18,7 +18,9 @@
 				id="pwd" value="1234">
 		</div>
 		<button type="submit" class="btn btn-primary ">로그인</button>
-	
+		<a href="https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=aeff9f33b9d74346008005686767c513&redirect_uri=http://localhost/user/kakao-callback">
+            <img alt ="" src="/images/kakao_login_small.png" width="75" height="40">
+        </a>
 	</form>
 	<div>
 		<button type="button" class="w3-button ws-green w3-margin-bottom" onclick="startAnim('Spin')">spin</button>

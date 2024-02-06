@@ -6,6 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.mysql.cj.callback.UsernameCallback;
 import com.tenco.bank.dto.SignInFormDto;
 import com.tenco.bank.dto.SignUpFormDto;
 import com.tenco.bank.handler.exception.CustomRestfulException;
@@ -89,8 +90,17 @@ public class UserService {
 		 * .password(dto.getPassword()) .build(); User userEntity =
 		 * userRepository.findByUsernameAndPassword(user);
 		 */
-
+	
+		
+		
 		return userEntity;
 	}
+	
+	//사용자 이름만 가지고 정보 조회
+
+	public User readUserByUserName(String Username) {
+			
+			return userRepository.findByUsername(Username);
+		}
 
 }
