@@ -37,20 +37,25 @@ public class AccountController {
 
 	private final AccountService accountService;
 
+
+	
 	public AccountController(HttpSession httpSession, AccountService accountService) {
 		this.httpSession = httpSession;
 		this.accountService = accountService;
 	}
 
+	
+	
 	/*
 	 * http://localhost:80/account/save 계좌 생성 페이지 요청
 	 * 
 	 * @return saveForm.jsp
 	 * 
 	 */
+	
 	@GetMapping("/save")
 	public String savePage() {
-
+		
 		User principal = (User) httpSession.getAttribute(Define.PRINCIPAL);
 
 		if (principal == null) {
