@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - BankApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>BankApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.tenco.bank.html">com.tenco.bank</a> &gt; BankApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.549s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.549s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>01:00:05.708 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tenco.bank.BankApplicationTests]: BankApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:00:05.769 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tenco.bank.BankApplication for test class com.tenco.bank.BankApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.8)
+
+2024-02-13T01:00:06.064+09:00  INFO 12084 --- [    Test worker] com.tenco.bank.BankApplicationTests      : Starting BankApplicationTests using Java 17.0.8 with PID 12084 (started by dbtmz in D:\workspace\F_bank)
+2024-02-13T01:00:06.066+09:00  INFO 12084 --- [    Test worker] com.tenco.bank.BankApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-02-13T01:00:06.431+09:00 DEBUG 12084 --- [    Test worker] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2024-02-13T01:00:06.432+09:00 DEBUG 12084 --- [    Test worker] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.tenco.bank'
+2024-02-13T01:00:06.494+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\workspace\F_bank\build\classes\java\main\com\tenco\bank\repository\interfaces\AccountRepository.class]
+2024-02-13T01:00:06.495+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\workspace\F_bank\build\classes\java\main\com\tenco\bank\repository\interfaces\HistoryRepository.class]
+2024-02-13T01:00:06.495+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\workspace\F_bank\build\classes\java\main\com\tenco\bank\repository\interfaces\UserRepository.class]
+2024-02-13T01:00:06.495+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'accountRepository' and 'com.tenco.bank.repository.interfaces.AccountRepository' mapperInterface
+2024-02-13T01:00:06.497+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'historyRepository' and 'com.tenco.bank.repository.interfaces.HistoryRepository' mapperInterface
+2024-02-13T01:00:06.497+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRepository' and 'com.tenco.bank.repository.interfaces.UserRepository' mapperInterface
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Parsed mapper file: 'file [D:\workspace\F_bank\build\resources\main\mapper\account.xml]'
+Parsed mapper file: 'file [D:\workspace\F_bank\build\resources\main\mapper\history.xml]'
+Parsed mapper file: 'file [D:\workspace\F_bank\build\resources\main\mapper\user.xml]'
+2024-02-13T01:00:07.138+09:00 DEBUG 12084 --- [    Test worker] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2024-02-13T01:00:07.181+09:00  INFO 12084 --- [    Test worker] com.tenco.bank.BankApplicationTests      : Started BankApplicationTests in 1.306 seconds (process running for 2.107)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at 2024. 2. 13. 오전 1:00:07</p>
+</div>
+</div>
+</body>
+</html>

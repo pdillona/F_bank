@@ -1,0 +1,25 @@
+
+d
+java:S2259ë"FA "NullPointerException" could be thrown; "getBody()" can return null.(£…ô—8’ß£ğÙ1
+h
+java:S2259‚"JA "NullPointerException" could be thrown; "kakaoProfile" is nullable here.(œƒŞ–8’ß£ğÙ1
+D
+java:S1125Y"'Remove the unnecessary boolean literal.(®Ğù8ÅºîÙ1
+I
+java:S1125f"'Remove the unnecessary boolean literal.(œŸÏîıÿÿÿÿ8ÇºîÙ1
+G	java:S106n"+Replace this use of System.out by a logger.(Öœ‚…8ÈºîÙ1
+T
+java:S1135v"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÉºîÙ1
+G	java:S106"+Replace this use of System.out by a logger.(š¾±Ó8ÉºîÙ1
+H	java:S106€"+Replace this use of System.out by a logger.(´ï¬¢8ÊºîÙ1
+O
+java:S1135†"2Complete the task associated to this TODO comment.(ÓÒ.8ÊºîÙ1
+P
+java:S1135œ"2Complete the task associated to this TODO comment.(ó·Éÿ8ÊºîÙ1
+H	java:S106È"+Replace this use of System.out by a logger.(ªüÀÎ8ÌºîÙ1
+H	java:S106Õ"+Replace this use of System.out by a logger.(‘¢’œ8ÓºîÙ1
+M	java:S106Ü"+Replace this use of System.out by a logger.(¿›’¬ıÿÿÿÿ8ÓºîÙ1
+H	java:S106â"+Replace this use of System.out by a logger.(ÕºûŒ8ÓºîÙ1
+M	java:S106ä"+Replace this use of System.out by a logger.(û¼Ãÿÿÿÿÿ8ÔºîÙ1
+H	java:S106ô"+Replace this use of System.out by a logger.(£²€Û8ÔºîÙ1
+Y	java:S125"<This block of commented-out lines of code should be removed.(¬Ş´Ã8ÕºîÙ1

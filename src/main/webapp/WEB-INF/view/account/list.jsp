@@ -33,7 +33,9 @@
 			</c:otherwise>
 		</c:choose>
 	</div>
-
+	<div>
+		<button type="submit" class="btn btn-primary "><a href="/mail/sendMail"> 메일 보내기</a></button>
+	</div>
 </div>
 </div>
 </div>

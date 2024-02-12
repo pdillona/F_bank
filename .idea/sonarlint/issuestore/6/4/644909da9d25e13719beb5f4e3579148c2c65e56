@@ -1,0 +1,18 @@
+
+r	java:S117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿœ´öıÿÿÿÿ8íˆ»òÙ1
+]	java:S125,"<This block of commented-out lines of code should be removed.(²¦¨¼ıÿÿÿÿ8öˆ»òÙ1
+I
+java:S1125["'Remove the unnecessary boolean literal.(ÜÉöÃÿÿÿÿÿ8øˆ»òÙ1
+X	java:S125c"<This block of commented-out lines of code should be removed.(ìí8øˆ»òÙ1
+š
+java:S1130r"xRemove the declaration of thrown exception 'jakarta.mail.MessagingException', as it cannot be thrown from method's body.(Ñ»ÿüÿÿÿÿ8ùˆ»òÙ1
+X	java:S125|"<This block of commented-out lines of code should be removed.(¹È8ùˆ»òÙ1
+[
+java:S1128">Remove this unused import 'jakarta.mail.internet.MimeMessage'.(š‹ÔÕ8ùˆ»òÙ1
+b
+java:S1128"@Remove this unused import 'org.springframework.mail.MailSender'.(§·åáùÿÿÿÿ8ùˆ»òÙ1
+r
+java:S1128
+"PRemove this unused import 'org.springframework.mail.javamail.MimeMessageHelper'.(Ö€”÷øÿÿÿÿ8ùˆ»òÙ1
+u
+java:S1128"SRemove this unused import 'com.tenco.bank.handler.exception.UnAuthorizedException'.(Ş‰íûÿÿÿÿ8úˆ»òÙ1

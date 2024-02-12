@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.tenco.bank.BankApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-12T16:00:07" hostname="DESKTOP-7GJM0OO" time="0.549">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.tenco.bank.BankApplicationTests" time="0.549"/>
+  <system-out><![CDATA[01:00:05.708 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.tenco.bank.BankApplicationTests]: BankApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:00:05.769 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.tenco.bank.BankApplication for test class com.tenco.bank.BankApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.8)
+
+2024-02-13T01:00:06.064+09:00  INFO 12084 --- [    Test worker] com.tenco.bank.BankApplicationTests      : Starting BankApplicationTests using Java 17.0.8 with PID 12084 (started by dbtmz in D:\workspace\F_bank)
+2024-02-13T01:00:06.066+09:00  INFO 12084 --- [    Test worker] com.tenco.bank.BankApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-02-13T01:00:06.431+09:00 DEBUG 12084 --- [    Test worker] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2024-02-13T01:00:06.432+09:00 DEBUG 12084 --- [    Test worker] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.tenco.bank'
+2024-02-13T01:00:06.494+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\workspace\F_bank\build\classes\java\main\com\tenco\bank\repository\interfaces\AccountRepository.class]
+2024-02-13T01:00:06.495+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\workspace\F_bank\build\classes\java\main\com\tenco\bank\repository\interfaces\HistoryRepository.class]
+2024-02-13T01:00:06.495+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\workspace\F_bank\build\classes\java\main\com\tenco\bank\repository\interfaces\UserRepository.class]
+2024-02-13T01:00:06.495+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'accountRepository' and 'com.tenco.bank.repository.interfaces.AccountRepository' mapperInterface
+2024-02-13T01:00:06.497+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'historyRepository' and 'com.tenco.bank.repository.interfaces.HistoryRepository' mapperInterface
+2024-02-13T01:00:06.497+09:00 DEBUG 12084 --- [    Test worker] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRepository' and 'com.tenco.bank.repository.interfaces.UserRepository' mapperInterface
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Parsed mapper file: 'file [D:\workspace\F_bank\build\resources\main\mapper\account.xml]'
+Parsed mapper file: 'file [D:\workspace\F_bank\build\resources\main\mapper\history.xml]'
+Parsed mapper file: 'file [D:\workspace\F_bank\build\resources\main\mapper\user.xml]'
+2024-02-13T01:00:07.138+09:00 DEBUG 12084 --- [    Test worker] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2024-02-13T01:00:07.181+09:00  INFO 12084 --- [    Test worker] com.tenco.bank.BankApplicationTests      : Started BankApplicationTests in 1.306 seconds (process running for 2.107)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

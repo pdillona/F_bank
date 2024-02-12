@@ -1,12 +1,17 @@
 package com.tenco.bank.service;
 
+import jakarta.mail.MessagingException;
+import jakarta.mail.internet.MimeMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mysql.cj.callback.UsernameCallback;
 import com.tenco.bank.dto.SignInFormDto;
 import com.tenco.bank.dto.SignUpFormDto;
 import com.tenco.bank.handler.exception.CustomRestfulException;
@@ -30,6 +35,9 @@ public class UserService {
 	@Autowired
 	private PasswordEncoder passwordEncoder;
 
+	@Autowired
+	private JavaMailSender mailSender;
+	
 	/*
 	 * @autowired 와 같은 역할 해당 코드가 있으면 autowired필요 없음 public
 	 * UserService(UserRepository userRepository) { this.userRepository =
@@ -101,6 +109,27 @@ public class UserService {
 	public User readUserByUserName(String Username) {
 			
 			return userRepository.findByUsername(Username);
-		}
+	}
+		
+	public void sendEmail(String to, String subject, String text) throws MessagingException {
+
+		SimpleMailMessage message = new SimpleMailMessage();
+		
+		message.setSubject(subject);
+		message.setText(text);
+		message.setTo(to);
+
+		mailSender.send(message);
+		
+		/*	MimeMessage message = mailSender.createMimeMessage();
+		MimeMessageHelper helper = new MimeMessageHelper(message, true, "UTF-8");
+		
+		helper.setTo(to); 				// 보낼 대상의 이메일 입력
+		helper.setSubject(subject);		// 제목
+		helper.setText(text, true);			// 내용
+		
+		mailSender.send(message);*/
+		
+	}	
 
 }
