@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -34,8 +35,10 @@ public class UserController {
 	
 	@Autowired
 	private HttpSession httpSession;
-	
-	
+
+/*	@Value("${MAIL_USERNAME}") 
+	private String mailUserName;*/
+
 	@Autowired 
 	private UserService userService;
 	
@@ -51,6 +54,8 @@ public class UserController {
 	public String signUpPage() {
 		// prefix: /WEB-INF/view/
 		// suffix: .jsp
+		
+	/*	System.out.println(mailUserName);  결과 jyj0298@gmail.com @value 어노테이션으로 맵핑 가능*/
 		
 		return "user/signUp";
 	}
