@@ -1,25 +1,19 @@
 package com.tenco.bank.service;
 
-import jakarta.mail.MessagingException;
-import jakarta.mail.internet.MimeMessage;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.mail.MailSender;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.tenco.bank.dto.SignInFormDto;
 import com.tenco.bank.dto.SignUpFormDto;
 import com.tenco.bank.handler.exception.CustomRestfulException;
-import com.tenco.bank.handler.exception.UnAuthorizedException;
 import com.tenco.bank.repository.entity.User;
 import com.tenco.bank.repository.interfaces.UserRepository;
-
+import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service // IoC 대상
 public class UserService {
